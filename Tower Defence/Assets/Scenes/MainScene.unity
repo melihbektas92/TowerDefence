@@ -6404,6 +6404,7 @@ GameObject:
   m_Component:
   - component: {fileID: 853798668}
   - component: {fileID: 853798669}
+  - component: {fileID: 853798670}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -6441,6 +6442,19 @@ MonoBehaviour:
   spawnPoint: {fileID: 1465528592}
   timeBetweenWaves: 5.5
   waveCountdownText: {fileID: 288242323}
+--- !u!114 &853798670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853798667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1cf3376fb764254995bd7ee4c0e0095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standartTurretPreFab: {fileID: 7417241024735695570, guid: 4306849a6acfbd64d9d229007ad78422, type: 3}
 --- !u!1001 &866829504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15168,11 +15182,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5999469614386211864, guid: e1754e2d6e4b10a418e1d09b5717c1fb, type: 3}
   m_PrefabInstance: {fileID: 2142581410}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2147329364 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1839522107945592840, guid: 4306849a6acfbd64d9d229007ad78422, type: 3}
-  m_PrefabInstance: {fileID: 7762103699306439107}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5999469613993255241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15237,10 +15246,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3041973759133142568, guid: 4306849a6acfbd64d9d229007ad78422, type: 3}
-      propertyPath: firePoint
-      value: 
-      objectReference: {fileID: 2147329364}
     - target: {fileID: 7417241024735695570, guid: 4306849a6acfbd64d9d229007ad78422, type: 3}
       propertyPath: m_Name
       value: Turret
