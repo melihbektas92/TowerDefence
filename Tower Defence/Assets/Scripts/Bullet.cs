@@ -1,4 +1,3 @@
-
 using System;
 using UnityEngine;
 
@@ -65,9 +64,10 @@ public class Bullet : MonoBehaviour
         
         foreach (Collider collider in colliders)
         {
-            if (collider.CompareTag("Enemy"))
+            if (collider.tag=="Enemy")
             {
                 Damage(collider.transform);
+                Debug.Log("Vuruldu");
             }
         }
     }
