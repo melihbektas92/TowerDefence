@@ -41,7 +41,7 @@ public class Bullet : MonoBehaviour
 
     }
 
-    private void HitTarget()
+    void HitTarget()
     {
         GameObject effectIns =(GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectIns, 5f);
@@ -67,14 +67,13 @@ public class Bullet : MonoBehaviour
             if (collider.tag=="Enemy")
             {
                 Damage(collider.transform);
-                Debug.Log("Vuruldu");
             }
         }
     }
 
     void Damage (Transform enemy)
     {
-        Destroy(target.gameObject);
+        Destroy(enemy.gameObject);
     }
 
     private void OnDrawGizmosSelected()
